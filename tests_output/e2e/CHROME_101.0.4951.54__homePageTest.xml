@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="e2e.homePageTest"
+    errors="1" failures="0" hostname="" id="" package="e2e" skipped="1"
+    tests="1" time="5.041" timestamp="">
+  
+    <testcase name="tests if HomePage is loaded" classname="e2e.homePageTest" time="5.041" assertions="0">
+    <error message="Error while running &#34;navigateTo&#34; command: [WebDriverError] Unable to navigate to url http://localhost:3000: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: headless chrome=101.0.4951.54)" type="error"><![CDATA[
+    Error
+    at DescribeInstance.&lt;anonymous&gt; (C:\Users\user\WebstormProjects\middlemarch\test\e2e\homePageTest.js:5:8)
+    at Context.call (C:\Users\user\WebstormProjects\middlemarch\node_modules\nightwatch\lib\testsuite\context.js:430:35)
+    at TestCase.run (C:\Users\user\WebstormProjects\middlemarch\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+    at Runnable.__runFn (C:\Users\user\WebstormProjects\middlemarch\node_modules\nightwatch\lib\testsuite\index.js:690:80)
+    at Runnable.run (C:\Users\user\WebstormProjects\middlemarch\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.createRunnable (C:\Users\user\WebstormProjects\middlemarch\node_modules\nightwatch\lib\testsuite\index.js:797:33)
+    at TestSuite.handleRunnable (C:\Users\user\WebstormProjects\middlemarch\node_modules\nightwatch\lib\testsuite\index.js:802:33)
+    at C:\Users\user\WebstormProjects\middlemarch\node_modules\nightwatch\lib\testsuite\index.js:690:21
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async DefaultRunner.runTestSuite (C:\Users\user\WebstormProjects\middlemarch\node_modules\nightwatch\lib\runner\test-runners\default.js:73:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       WebDriverError: Error while running &#34;navigateTo&#34; command: [WebDriverError] Unable to navigate to url http://localhost:3000/test_render/: unknown error: net::ERR_CONNECTION_REFUSED
+   (Session info: headless chrome=101.0.4951.54)
+   
+  Error: An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;C:\\Users\\user\\WebstormProjects\\middlemarch\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe&#39;,
+     port: 9515,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: []
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+ WebDriverError: Error while running &#34;navigateTo&#34; command: [WebDriverError] Unable to navigate to url http://localhost:3000: unknown error: net::ERR_CONNECTION_REFUSED
+   (Session info: headless chrome=101.0.4951.54)
+       at DescribeInstance.&lt;anonymous&gt; (C:\Users\user\WebstormProjects\middlemarch\test\e2e\homePageTest.js:5:8)
+    </system-err>
+  
+
+    
+
+  
+    
+    <testcase
+      name="adds 2 volumes of &#34;Rhinoceros and Other Plays&#34; to cart" classname="e2e.homePageTest">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
